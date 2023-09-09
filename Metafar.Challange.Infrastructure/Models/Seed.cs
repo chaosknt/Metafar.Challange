@@ -43,8 +43,6 @@ namespace Metafar.Challange.Data.Models
                     context.SaveChanges();
 
                     var movements = new List<AccountMovementDbEntity>();
-                    DateTime lastExtraction;
-
                     for (int i = 0; i < 20; i++)
                     {
                         var type = RandomNumberGenerator.GenerateRandomNumber(0, 1);
