@@ -5,6 +5,18 @@ VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metafar.Challange", "Metafar.Challange\Metafar.Challange.csproj", "{AB38AC62-ACD7-48C0-8E47-4F097DFB66C9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metafar.Challange.Entities", "Metafar.Challange.Entities\Metafar.Challange.Entities.csproj", "{176490A8-8E99-44C1-B403-044AF8C30019}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metafar.Challange.Application", "Metafar.Challange.Application\Metafar.Challange.Application.csproj", "{E85A18E2-8ADE-41F3-B58B-B6DED38B925C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metafar.Challange.Domain", "Metafar.Challange.Domain\Metafar.Challange.Domain.csproj", "{84180B6B-845A-4256-BDE3-FDA5FAD96BD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metafar.Challange.Data", "Metafar.Challange.Infrastructure\Metafar.Challange.Data.csproj", "{CC3DA9EE-FD05-4C9E-9EAC-6830EAD14A0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metafar.Challange.Tests", "Metafar.Challange.Tests\Metafar.Challange.Tests.csproj", "{1D89AF5E-5ACC-4667-B76D-5CE36448C61A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metafar.Challange.Common", "Metafar.Challange.Common\Metafar.Challange.Common.csproj", "{E8B483F9-B48F-4585-9165-447C8A0F56D8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +27,30 @@ Global
 		{AB38AC62-ACD7-48C0-8E47-4F097DFB66C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB38AC62-ACD7-48C0-8E47-4F097DFB66C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB38AC62-ACD7-48C0-8E47-4F097DFB66C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{176490A8-8E99-44C1-B403-044AF8C30019}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{176490A8-8E99-44C1-B403-044AF8C30019}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{176490A8-8E99-44C1-B403-044AF8C30019}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{176490A8-8E99-44C1-B403-044AF8C30019}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E85A18E2-8ADE-41F3-B58B-B6DED38B925C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E85A18E2-8ADE-41F3-B58B-B6DED38B925C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E85A18E2-8ADE-41F3-B58B-B6DED38B925C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E85A18E2-8ADE-41F3-B58B-B6DED38B925C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84180B6B-845A-4256-BDE3-FDA5FAD96BD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84180B6B-845A-4256-BDE3-FDA5FAD96BD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84180B6B-845A-4256-BDE3-FDA5FAD96BD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84180B6B-845A-4256-BDE3-FDA5FAD96BD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC3DA9EE-FD05-4C9E-9EAC-6830EAD14A0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC3DA9EE-FD05-4C9E-9EAC-6830EAD14A0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC3DA9EE-FD05-4C9E-9EAC-6830EAD14A0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC3DA9EE-FD05-4C9E-9EAC-6830EAD14A0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D89AF5E-5ACC-4667-B76D-5CE36448C61A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D89AF5E-5ACC-4667-B76D-5CE36448C61A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D89AF5E-5ACC-4667-B76D-5CE36448C61A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D89AF5E-5ACC-4667-B76D-5CE36448C61A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8B483F9-B48F-4585-9165-447C8A0F56D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8B483F9-B48F-4585-9165-447C8A0F56D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8B483F9-B48F-4585-9165-447C8A0F56D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8B483F9-B48F-4585-9165-447C8A0F56D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
