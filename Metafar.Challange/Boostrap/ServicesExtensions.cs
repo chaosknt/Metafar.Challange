@@ -20,8 +20,11 @@ namespace Metafar.Challange.Boostrap
     {
         public static IServiceCollection ConfigureServices(this IServiceCollection services, IConfiguration configuration)
         {
+            //services.AddDbContext<MetafarDbContext>(options => options
+            //    .UseSqlServer(configuration.GetConnectionString("MetafarDb")));
+
             services.AddDbContext<MetafarDbContext>(options => options
-                .UseSqlServer(configuration.GetConnectionString("MetafarDb")));
+               .UseInMemoryDatabase(databaseName: "MetafarDb"));
 
             services.AddSingleton(Log.Logger);
 
