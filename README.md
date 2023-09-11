@@ -67,6 +67,10 @@ Aunque el requisito es bastante simple, opté por organizarlo en capas para mant
 
 Actualmente, estoy versionando tanto la API como los DTOs utilizados en caso de que en el futuro se necesite realizar cambios críticos, siguiendo el principio de Abierto/Cerrado (Open/Closed Principle) al permitir extensiones sin modificar el código existente. Cualquier modificación se implementaría en una versión 2, dejando la versión 1 intacta, para seguir el principio de Interfaz Segregación (Interface Segregation Principle) y no forzar a los consumidores de la API a depender de funcionalidades innecesarias.
 
+## DER
+
+![Texto alternativo](DER.jpg)
+
 ## Configuracion del proyecto
 
 Existen dos tipos de base de datos listas para utilizar. SQL Server y Database in memory. Por paracilitar la prueba del proyecto se dejo configurada por defecto ésta última.
