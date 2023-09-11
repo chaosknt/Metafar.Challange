@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Metafar.Challange.Data.Models
 {
     [Table("accountmovements", Schema = "dbo")]
-    public class AccountMovementDbEntity
+    public class AccountMovementDbEntity : IDbEntity
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

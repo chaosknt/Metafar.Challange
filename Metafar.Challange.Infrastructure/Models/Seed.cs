@@ -31,9 +31,9 @@ namespace Metafar.Challange.Data.Models
 
                     var user = new MetafarAccDbEntity()
                     {
-                        UserName = "53a8fc816e63b7a5ccd17aaff93f28bcf13abbf418209dcd93947722d7c326ba",//371449635398431
+                        UserName = CryptographyHelper.ComputeHashSha256("371449635398431"),
                         AccountNumber = "999-999",
-                        PasswordHash = "b3a8e0e1f9ab1bfe3a36f231f676f78bb30a519d2b21e6c530c0eee8ebb4a5d0",//456
+                        PasswordHash = CryptographyHelper.ComputeHashSha256("456"),
                         Name = "Mariano Pagani",
                         AccountBalance = startAccountValance,
                         Movements = new List<AccountMovementDbEntity>()
@@ -46,7 +46,7 @@ namespace Metafar.Challange.Data.Models
                     for (int i = 0; i < 20; i++)
                     {
                         var type = RandomNumberGenerator.GenerateRandomNumber(0, 1);
-                        var value = RandomNumberGenerator.GenerateRandomDecimal(0, user.AccountBalance);
+                        var value = RandomNumberGenerator.GenerateRandomDecimal(0, user.AccountBalance /10 );
 
                         var newMovement = new AccountMovementDbEntity()
                         {

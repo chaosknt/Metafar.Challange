@@ -3,19 +3,24 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metafar.Challange", "Metafar.Challange\Metafar.Challange.csproj", "{AB38AC62-ACD7-48C0-8E47-4F097DFB66C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Metafar.Challange", "Metafar.Challange\Metafar.Challange.csproj", "{AB38AC62-ACD7-48C0-8E47-4F097DFB66C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metafar.Challange.Entities", "Metafar.Challange.Entities\Metafar.Challange.Entities.csproj", "{176490A8-8E99-44C1-B403-044AF8C30019}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Metafar.Challange.Entities", "Metafar.Challange.Entities\Metafar.Challange.Entities.csproj", "{176490A8-8E99-44C1-B403-044AF8C30019}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metafar.Challange.Application", "Metafar.Challange.Application\Metafar.Challange.Application.csproj", "{E85A18E2-8ADE-41F3-B58B-B6DED38B925C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Metafar.Challange.Application", "Metafar.Challange.Application\Metafar.Challange.Application.csproj", "{E85A18E2-8ADE-41F3-B58B-B6DED38B925C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metafar.Challange.Domain", "Metafar.Challange.Domain\Metafar.Challange.Domain.csproj", "{84180B6B-845A-4256-BDE3-FDA5FAD96BD7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Metafar.Challange.Data", "Metafar.Challange.Infrastructure\Metafar.Challange.Data.csproj", "{CC3DA9EE-FD05-4C9E-9EAC-6830EAD14A0D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metafar.Challange.Data", "Metafar.Challange.Infrastructure\Metafar.Challange.Data.csproj", "{CC3DA9EE-FD05-4C9E-9EAC-6830EAD14A0D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Metafar.Challange.Tests", "Metafar.Challange.Tests\Metafar.Challange.Tests.csproj", "{1D89AF5E-5ACC-4667-B76D-5CE36448C61A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metafar.Challange.Tests", "Metafar.Challange.Tests\Metafar.Challange.Tests.csproj", "{1D89AF5E-5ACC-4667-B76D-5CE36448C61A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Metafar.Challange.Common", "Metafar.Challange.Common\Metafar.Challange.Common.csproj", "{E8B483F9-B48F-4585-9165-447C8A0F56D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metafar.Challange.Common", "Metafar.Challange.Common\Metafar.Challange.Common.csproj", "{E8B483F9-B48F-4585-9165-447C8A0F56D8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metafar.Challange.Data.Service", "Metafar.Challange.Data.Service\Metafar.Challange.Data.Service.csproj", "{CBE467A4-9F18-4F35-9177-8F271F5D52DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A6D3F25D-764E-43F2-AF13-574E3ACA38D4}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +40,6 @@ Global
 		{E85A18E2-8ADE-41F3-B58B-B6DED38B925C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E85A18E2-8ADE-41F3-B58B-B6DED38B925C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E85A18E2-8ADE-41F3-B58B-B6DED38B925C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{84180B6B-845A-4256-BDE3-FDA5FAD96BD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{84180B6B-845A-4256-BDE3-FDA5FAD96BD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{84180B6B-845A-4256-BDE3-FDA5FAD96BD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{84180B6B-845A-4256-BDE3-FDA5FAD96BD7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CC3DA9EE-FD05-4C9E-9EAC-6830EAD14A0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CC3DA9EE-FD05-4C9E-9EAC-6830EAD14A0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC3DA9EE-FD05-4C9E-9EAC-6830EAD14A0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -51,6 +52,10 @@ Global
 		{E8B483F9-B48F-4585-9165-447C8A0F56D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8B483F9-B48F-4585-9165-447C8A0F56D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8B483F9-B48F-4585-9165-447C8A0F56D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBE467A4-9F18-4F35-9177-8F271F5D52DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBE467A4-9F18-4F35-9177-8F271F5D52DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBE467A4-9F18-4F35-9177-8F271F5D52DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBE467A4-9F18-4F35-9177-8F271F5D52DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

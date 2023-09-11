@@ -6,14 +6,6 @@ namespace Metafar.Challange.Data.Models
 {
     public class MetafarAccDbEntity : IdentityUser<Guid>, IDbEntity
     {
-        //[Required]
-        //[StringLength(70)]
-        //public string CreditCardNumber  { get; set; }// username
-
-        //[Required]
-        //[StringLength(70)]
-        //public string PIN { get; set; } //password
-
         [Required]
         [StringLength(256)]
         public string Name { get; set; }
@@ -25,6 +17,10 @@ namespace Metafar.Challange.Data.Models
         public decimal AccountBalance { get; set; } = 0;
 
         public DateTime? LastExtraction { get; set; }
+
+        public string? RefreshToken { get; set; }
+
+        public DateTime? RefreshTokenExpiryTime { get; set; }
 
         [NotMapped]
         public virtual ICollection<AccountMovementDbEntity> Movements { get; set; }

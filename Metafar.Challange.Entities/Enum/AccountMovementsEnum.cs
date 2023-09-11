@@ -1,8 +1,13 @@
-﻿namespace Metafar.Challange.Entities.Enum
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Metafar.Challange.Entities.Enum
 {
     public enum AccountMovementsEnum
     {
-        Deposit,
-        Withdrawal
+        [Display(Name = "Extraccion")]
+        Withdrawal,
+        
+        [Display(Name = "Deposito")]
+        Deposit
     }
 }

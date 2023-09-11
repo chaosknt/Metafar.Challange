@@ -9,6 +9,10 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Metafar.Challange.Common;
+using Serilog;
+using Metafar.Challange.Data.Service.Managers.User;
+using Metafar.Challange.Data.Service.Stores.User;
+using Metafar.Challange.Data.Service.Stores.Movements;
 
 namespace Metafar.Challange.Boostrap
 {
@@ -22,10 +26,12 @@ namespace Metafar.Challange.Boostrap
             services.AddIdentity<MetafarAccDbEntity, RoleDbEntity>()
                .AddEntityFrameworkStores<MetafarDbContext>();
 
-            //services.AddJWTTokenServices(configuration);
-            //services.AddSwaggerGenService();
+            services.AddSingleton(Log.Logger);
 
-            //services.AddDataServices();
+            services.AddJWTTokenServices(configuration);
+            services.AddSwaggerGenService();
+
+            services.AddDataServices();
             //services.AddConfigurationService();
 
             return services;
@@ -89,37 +95,13 @@ namespace Metafar.Challange.Boostrap
             .AddDataStoreServices();
 
         internal static IServiceCollection AddDataManagerServices(this IServiceCollection services)
-            => services;
-        //.AddScoped<IAccountManager, MapaUserManager>()
-        //.AddScoped<IUserManager, UserManager>()
-        //.AddScoped<ICompanyManager, CompanyManager>()
-        //.AddScoped<IRoleManager, RoleManager>()
-        //.AddScoped<IZoneManager, ZoneManager>()
-        //.AddScoped<ISellerManager, SellerManager>()
-        //.AddScoped<ISellerNumbersManager, SellerNumbersManager>()
-        //.AddScoped<INumbersManager, NumbersManager>()
-        //.AddScoped<ICustomersManager, CustomersManager>()
-        //.AddScoped<ICustomerClaimsManager, CustomerClaimsManager>()
-        //.AddScoped<ICustomerDebtManager, CustomerDebtManager>()
-        //.AddScoped<ICustomerOrderManager, CustomerOrderManager>()
-        //.AddScoped<IAttendanceRecordsManager, AttendanceRecordsManager>();
+            => services
+        .AddScoped<IUserManager, UserManager>();
 
         internal static IServiceCollection AddDataStoreServices(this IServiceCollection services)
-            => services;
-        //.AddScoped<IMapaAccountUserStore, MapaAccountUserStore>()
-        //.AddScoped<IUserStore, UserStore>()
-        //.AddScoped<ICompanyStore, CompanyStore>()
-        //.AddScoped<IRoleStore, RoleStore>()
-        //.AddScoped<IZoneStore, ZoneStore>()
-        //.AddScoped<ISellerStore, SellerStore>()
-        //.AddScoped<ISellerNumbersStore, SellerNumbersStore>()
-        //.AddScoped<INumbersStore, NumbersStore>()
-        //.AddScoped<ICustomerStore, CustomerStore>()
-        //.AddScoped<ICustomerClaimsStore, CustomerClaimsStore>()
-        //.AddScoped<ICustomerDebtStore, CustomerDebtStore>()
-        //.AddScoped<ICustomerOrderStore, CustomerOrderStore>()
-        //.AddScoped<IAttendanceRecordsStore, AttendanceRecordsStore>()
-        //.AddScoped<ICheckOutRulesStore, CheckOutRulesStore>();
+            => services
+        .AddScoped<IUserStore, Data.Service.Stores.User.UserStore>()
+        .AddScoped<IUserMovementsStore, UserMovementsStore>();
 
         public static IServiceCollection AddConfigurationService(this IServiceCollection services)
            => services
