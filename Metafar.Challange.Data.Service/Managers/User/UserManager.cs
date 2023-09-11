@@ -38,7 +38,7 @@
                 return new Response<User>() { WasSuccessfullyProcceded = false, Message = "El usuario se encuentra bloqueado" };
             }
 
-            if(user.PasswordHash != encryptedPin)
+            if(user.Pin != encryptedPin)
             {
                 user.AccessFailedCount++;
                 if(user.AccessFailedCount >= _maxSigInRetries)
@@ -163,7 +163,7 @@
         }
 
         private async Task<MetafarAccDbEntity> FindUserByCreditCardAsync(string creditCard)
-           => (await this._userStore.GetAllAsync(x => x.UserName == CryptographyHelper.ComputeHashSha256(creditCard))).FirstOrDefault();
+           => (await this._userStore.GetAllAsync(x => x.CreditCardNumber == CryptographyHelper.ComputeHashSha256(creditCard))).FirstOrDefault();
         
     }
 }

@@ -1,13 +1,11 @@
-﻿using Metafar.Challange.Data.Service.Managers.User;
-using Metafar.Challange.Data.Service.Stores.User;
+﻿using Metafar.Challange.Common.Extensions;
+using Metafar.Challange.Data.Service.Managers.User;
+using Metafar.Challange.Entities.Api;
 using Metafar.Challange.Entities.Api.V1;
 using Metafar.Challange.Models;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using Illogger = Serilog;
-using Metafar.Challange.JwtHelpers;
-using Metafar.Challange.Entities.Api;
-using Metafar.Challange.Common.Extensions;
 
 namespace Metafar.Challange.Controllers.V1
 {
@@ -25,6 +23,8 @@ namespace Metafar.Challange.Controllers.V1
         }
 
         [HttpPost("sigin")]
+        [ProducesResponseType(typeof(AuthResponse), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(List<ErrorResponse>), StatusCodes.Status400BadRequest)]
         public async Task<ActionResult<BasicResponse>> Login([FromBody] LoginRequestModel request)
         {
             var correlationId = Guid.NewGuid();
@@ -33,7 +33,6 @@ namespace Metafar.Challange.Controllers.V1
                 .ForContext("RequestBody", JsonConvert.SerializeObject(request));
             try
             {
-                loggerContext.Information("Start User Sig in");
                 var result = await _userManager.FindUserAsync(request.CreditCardNumber, request.PIN);
                 if (!result.WasSuccessfullyProcceded)
                 {

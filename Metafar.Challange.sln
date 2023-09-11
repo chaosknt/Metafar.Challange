@@ -7,15 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Metafar.Challange", "Metafa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Metafar.Challange.Entities", "Metafar.Challange.Entities\Metafar.Challange.Entities.csproj", "{176490A8-8E99-44C1-B403-044AF8C30019}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Metafar.Challange.Application", "Metafar.Challange.Application\Metafar.Challange.Application.csproj", "{E85A18E2-8ADE-41F3-B58B-B6DED38B925C}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Metafar.Challange.Data", "Metafar.Challange.Infrastructure\Metafar.Challange.Data.csproj", "{CC3DA9EE-FD05-4C9E-9EAC-6830EAD14A0D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Metafar.Challange.Tests", "Metafar.Challange.Tests\Metafar.Challange.Tests.csproj", "{1D89AF5E-5ACC-4667-B76D-5CE36448C61A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Metafar.Challange.Common", "Metafar.Challange.Common\Metafar.Challange.Common.csproj", "{E8B483F9-B48F-4585-9165-447C8A0F56D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metafar.Challange.Data.Service", "Metafar.Challange.Data.Service\Metafar.Challange.Data.Service.csproj", "{CBE467A4-9F18-4F35-9177-8F271F5D52DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Metafar.Challange.Data.Service", "Metafar.Challange.Data.Service\Metafar.Challange.Data.Service.csproj", "{CBE467A4-9F18-4F35-9177-8F271F5D52DB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A6D3F25D-764E-43F2-AF13-574E3ACA38D4}"
 	ProjectSection(SolutionItems) = preProject
@@ -36,10 +34,6 @@ Global
 		{176490A8-8E99-44C1-B403-044AF8C30019}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{176490A8-8E99-44C1-B403-044AF8C30019}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{176490A8-8E99-44C1-B403-044AF8C30019}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E85A18E2-8ADE-41F3-B58B-B6DED38B925C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E85A18E2-8ADE-41F3-B58B-B6DED38B925C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E85A18E2-8ADE-41F3-B58B-B6DED38B925C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E85A18E2-8ADE-41F3-B58B-B6DED38B925C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CC3DA9EE-FD05-4C9E-9EAC-6830EAD14A0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CC3DA9EE-FD05-4C9E-9EAC-6830EAD14A0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC3DA9EE-FD05-4C9E-9EAC-6830EAD14A0D}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -2,11 +2,6 @@
 using Metafar.Challange.Data.Models;
 using Metafar.Challange.Data.Service.Managers.Models;
 using Metafar.Challange.Entities.Enum;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Metafar.Challange.Data.Service.Mappers
 {

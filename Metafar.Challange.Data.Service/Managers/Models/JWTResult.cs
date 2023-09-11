@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Metafar.Challange.Data.Service.Managers.Models
+﻿namespace Metafar.Challange.Data.Service.Managers.Models
 {
     public class JWTResult
     {

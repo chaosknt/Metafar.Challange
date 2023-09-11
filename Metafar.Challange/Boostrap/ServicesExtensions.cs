@@ -23,16 +23,12 @@ namespace Metafar.Challange.Boostrap
             services.AddDbContext<MetafarDbContext>(options => options
                 .UseSqlServer(configuration.GetConnectionString("MetafarDb")));
 
-            services.AddIdentity<MetafarAccDbEntity, RoleDbEntity>()
-               .AddEntityFrameworkStores<MetafarDbContext>();
-
             services.AddSingleton(Log.Logger);
 
             services.AddJWTTokenServices(configuration);
             services.AddSwaggerGenService();
 
             services.AddDataServices();
-            //services.AddConfigurationService();
 
             return services;
         }
@@ -102,9 +98,5 @@ namespace Metafar.Challange.Boostrap
             => services
         .AddScoped<IUserStore, Data.Service.Stores.User.UserStore>()
         .AddScoped<IUserMovementsStore, UserMovementsStore>();
-
-        public static IServiceCollection AddConfigurationService(this IServiceCollection services)
-           => services
-               .AddSingleton<AppSettingsConfigurationService>();
     }
 }

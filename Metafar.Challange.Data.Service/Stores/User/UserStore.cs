@@ -1,6 +1,4 @@
 ﻿using Metafar.Challange.Data.Models;
-using Metafar.Challange.Data.Service.Stores.Movements;
-using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
 namespace Metafar.Challange.Data.Service.Stores.User
