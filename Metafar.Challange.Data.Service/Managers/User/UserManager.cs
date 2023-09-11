@@ -80,7 +80,7 @@
                 return new Response<User>() { WasSuccessfullyProcceded = false, Message = _creditCardNotFound };
             }
 
-            return new Response<User>() { WasSuccessfullyProcceded = true,Content = user.ToModel() };
+            return new Response<User>() { WasSuccessfullyProcceded = true, Content = user.ToModel() };
         }
 
         public async Task<Response<WithdrawalResponse>> Withdrawal(Guid id, string creditCard, decimal amount)
